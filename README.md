@@ -10,24 +10,6 @@ The dataset is provided by Kaggle and consists of:
 - **test.csv** - Contains weather data for which we need to predict rainfall probabilities.
 - **sample_submission.csv** - A template for the expected output format.
 
-## 🛠 **Setup Instructions**
-### **1️⃣ Clone the repository**
-```bash
-git clone https://github.com/yourusername/kaggle-rainfall-prediction.git
-cd kaggle-rainfall-prediction
-```
-
-### **2️⃣ Install Dependencies**
-```bash
-pip install -r requirements.txt
-```
-
-### **3️⃣ Run the Model**
-To train the model and generate predictions:
-```bash
-python train.py
-```
-
 ## 📊 **Model & Approach**
 - **Preprocessing:**
   - Missing values are handled using mean imputation.
@@ -44,15 +26,6 @@ python train.py
 - The current model achieves a **validation AUC score of ~0.857**.
 - Further improvements can be made using **feature engineering, hyperparameter tuning, and ensemble models**.
 
-## 💂️ **File Structure**
-```
-📆 kaggle-rainfall-prediction
- ┓ 📝 train.py                 # Main script for training and predictions
- ┓ 📝 README.md                # Documentation
- ┓ 📝 requirements.txt         # Dependencies
- ┓ 📂 data                     # Folder for dataset (train.csv, test.csv, etc.)
- ┓ 📂 outputs                  # Folder for saving submission files
-```
 
 ## 🏗 **Future Improvements**
 - Try **Gradient Boosting (XGBoost, LightGBM)** for better performance.
